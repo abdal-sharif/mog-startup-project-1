@@ -26,7 +26,7 @@ body{
 .header{
     position: relative;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.842)),url('/images/main-bcg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.466)),url('/images/main-bcg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -67,7 +67,7 @@ body{
     left: 30%;
     top: 30px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
     color: var(--mainDark);
     box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.219);
     font-weight: bold;
@@ -82,4 +82,103 @@ body{
    transition:var(--mainTransition);
 
 }
+
+
+/* section middle */
+
+.middle{
+    position: relative;
+    background-color: rgba(211, 211, 211, 0.76);
+    width: 98.77vw;
+    height: 70vh;
+    display: flex;
+    
+}
+
+
+.first{
+    position: relative;
+    background-color: lightgray;
+    width: 23vw;
+    height: 60vh;
+    left: 15px;
+    top: 1%;
+    border-radius: 15px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.137);
+
+}
+
+
+.second{
+    position: relative;
+    background-color: lightgray;
+    width: 23vw;
+    height: 60vh;
+    left: 30px;
+    top: 1%;
+    border-radius: 15px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.137);
+
+}
+
+
+
+
+.third{
+    position: relative;
+    background-color: lightgray;
+    width: 23vw;
+    height: 60vh;
+    left: 45px;
+    top: 1%;
+    border-radius: 15px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.137);   
+ 
+}
+
+.fourth{
+    position: relative;
+    background-color: lightgray;
+    width: 23vw;
+    height: 60vh;
+    left: 60px;
+    top: 1%;
+    border-radius: 15px;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.137);
+
+}
+
+
+
+/* section middle hover area */
+
+.first:hover{
+    background-color: darkgray;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+     transition: var(--mainTransition);
+}
+
+.second:hover{
+    background-color: darkgray;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+    transition: var(--mainTransition);
+}
+
+
+.third:hover{
+    background-color: darkgray;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+    transition: var(--mainTransition);
+}
+
+
+.fourth:hover{
+    background-color: darkgray;
+    box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0);
+    transition: var(--mainTransition);
+}
+
+
+
+
 
