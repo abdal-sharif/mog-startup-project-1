@@ -56,12 +56,14 @@ body{
     font-size: 2.3rem;
     font-family: var(--macondoText);
     color: var(--secondaryColor);
+    animation: slidefromright 3s ease-in-out;
 }
 
 .banner-sub{
     margin-top: 10px;
     font-size: 3.3rem;
     color: var(--mainWhite);
+    animation: slidefromleft 3s ease-in-out;
 }
 
 /* banner btn */
@@ -80,6 +82,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0.7;
+    animation: show 2s ease-in-out;
  
 
 }
@@ -94,7 +97,89 @@ body{
    color: white;
    opacity: 1;
 
+
+
+
 }
+
+/* key frame  */
+
+@keyframes show {
+    0%{
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes slidefromright{
+    0%{
+        transform:translatex(400px);
+      
+    }
+
+    50%{
+        transform:translatex(-200px);
+      
+    }
+
+    75%{
+        transform:translatex(50px);
+      
+    }
+
+    100%{
+        transform:translatex(0px);
+      
+    }
+
+
+}
+    
+@keyframes slidefromleft{
+    0%{
+        transform:translatex(-400px);
+      
+    }
+
+    50%{
+        transform:translatex(200px);
+      
+    }
+
+    75%{
+        transform:translatex(-50px);
+      
+    }
+
+    100%{
+        transform:translatex(0px);
+      
+    }
+
+
+}
+
+/*  end of animation*/
+
+
+/* contnent divider */
+
+.content-divider{
+  height: 0.5rem;
+  background: linear-gradient(to left,
+   var(--primaryColor),
+   var(--secondaryColor),
+   var(--primaryColor)
+  );
+}
+/* end contnent divider */
 
 
 /* section middle */
@@ -105,10 +190,13 @@ body{
     width: 98.77vw;
     height: 70vh;
     display: flex;
-    border-top: 2px solid var(--secondaryColor);
+    text-align: center;
+    padding: 2.5rem 0;
+    
     
 }
 
+/* article one */
 
 .first{
     position: relative;
@@ -123,6 +211,9 @@ body{
 }
 
 
+
+
+/* article two */
 .second{
     position: relative;
     background-color: lightgray;
@@ -137,7 +228,7 @@ body{
 
 
 
-
+/* article three */
 .third{
     position: relative;
     background-color: lightgray;
@@ -149,6 +240,12 @@ body{
     box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.048);  
  
 }
+
+
+
+
+
+/* article four */
 
 .fourth{
     position: relative;
@@ -200,3 +297,33 @@ body{
 
 
 
+/* all articles */
+
+.special-icon{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    transform: var(--mainTransition);
+    display: inline-block;
+}
+
+
+.special-title{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1.5rem;
+    color: var(--secondaryColor);
+
+}
+
+.special-text{
+    max-width: 13rem;
+    margin:  0 auto;
+}
+
+
+
+
+
+/* media screen */
